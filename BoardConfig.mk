@@ -79,6 +79,7 @@ TARGET_DISABLE_POSTRENDER_CLEANUP := true
 TARGET_USES_GRALLOC1 := true
 TARGET_USES_HWC2 := true
 TARGET_USES_ION := true
+USE_OPENGL_RENDERER := true
 
 OVERRIDE_RS_DRIVER := libRSDriver_adreno.so
 
@@ -89,9 +90,6 @@ DEVICE_MATRIX_FILE   := $(DEVICE_PATH)/configs/vintf/compatibility_matrix.xml
 TARGET_FS_CONFIG_GEN += \
     $(DEVICE_PATH)/configs/fs/config.fs \
     $(DEVICE_PATH)/configs/fs/mot_aids.fs
-
-# HWUI
-HWUI_COMPILE_FOR_PERF := true
 
 # Kernel
 BOARD_KERNEL_BASE := 0x80000000
