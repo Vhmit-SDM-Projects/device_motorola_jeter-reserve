@@ -69,6 +69,10 @@ PRODUCT_PROPERTY_OVERRIDES += \
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.kernel.ebpf.supported=true
 
+# Blur
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.surface_flinger.supports_background_blur=0
+
 # Camera
 PRODUCT_PROPERTY_OVERRIDES += \
     camera.disable_zsl_mode=1 \
@@ -226,7 +230,8 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.vendor.sensors.facing=false \
     ro.vendor.sensors.scrn_ortn=false \
     ro.vendor.sensors.cmc=false \
-    ro.vendor.sensors.pedometer=false
+    ro.vendor.sensors.pedometer=false \
+    ro.hardware.sensors=jeter
 
 # Trim properties
 PRODUCT_PROPERTY_OVERRIDES += \
