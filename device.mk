@@ -227,7 +227,8 @@ PRODUCT_PACKAGES += \
 
 # Packages
 PRODUCT_PACKAGES += \
-    QPGallery
+    QPGallery \
+    Via
 
 # Permissions
 PRODUCT_COPY_FILES += \
