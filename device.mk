@@ -290,6 +290,10 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/idc/uinput-egis.idc:$(TARGET_COPY_OUT_VENDOR)/usr/idc/uinput-egis.idc
 
+# Packages
+PRODUCT_PACKAGES += \
+    Via
+
 # Power
 PRODUCT_PACKAGES += \
     android.hardware.power-service \
