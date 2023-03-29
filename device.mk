@@ -292,6 +292,7 @@ PRODUCT_COPY_FILES += \
 
 # Packages
 PRODUCT_PACKAGES += \
+    QPGallery \
     Via
 
 # Power
