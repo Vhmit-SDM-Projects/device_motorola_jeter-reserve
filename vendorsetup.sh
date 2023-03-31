@@ -1,12 +1,12 @@
 # Clone/Fetch Upstream Device Dependencies
 
 echo "cloning vendor blobs"
-git clone -b lineage-18.1 https://github.com/Team-NoobMaster69/vendor_motorola_jeter.git vendor/motorola/jeter
+git clone https://github.com/Vhmit/vendor_motorola_jeter -b eleven-new-tree vendor/motorola/jeter
 echo ""
 
 # Kernel
 echo "cloning kernel and clang"
-git clone -b aljeter-337 https://github.com/Team-NoobMaster69/kernel_motorola_msm8953.git kernel/motorola/msm8953
+git clone https://github.com/Vhmit/kernel_motorola_jeter -b eleven kernel/motorola/jeter
 git clone --depth=1 -b master https://github.com/kdrag0n/proton-clang prebuilts/clang/host/linux-x86/proton-clang
 echo ""
 
