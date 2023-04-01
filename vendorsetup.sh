@@ -37,3 +37,11 @@ git clone https://github.com/LineageOS/android_hardware_qcom_media -b lineage-20
 rm -rf hardware/qcom-caf/msm8996/display
 git clone https://github.com/LineageOS/android_hardware_qcom_display -b lineage-20.0-caf-msm8996 hardware/qcom-caf/msm8996/display
 echo ""
+
+# Framework
+echo "pick framework apps"
+cd frameworks/base
+git fetch https://github.com/rd-stuffs/android_frameworks_base topaz
+git cherry-pick 5be0190fb074b1c63b1c2004259183e1e0521d8c
+cd ../..
+echo ""
