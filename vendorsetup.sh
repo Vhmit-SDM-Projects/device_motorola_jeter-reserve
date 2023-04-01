@@ -1,12 +1,12 @@
 # Clone/Fetch Upstream Device Dependencies
 
 echo "cloning vendor blobs"
-git clone -b thirteen git@github.com:Team-NoobMaster69/vendor_motorola_jeter.git vendor/motorola/jeter
+git clone https://github.com/Vhmit/vendor_motorola_jeter -b thirteen-new-tree vendor/motorola/jeter
 echo ""
 
 # Kernel
 echo "cloning kernel"
-git clone -b aljeter-337 git@github.com:Team-NoobMaster69/kernel_motorola_msm8953.git kernel/motorola/msm8953
+git clone https://github.com/Vhmit/kernel_motorola_jeter -b thirteen kernel/motorola/jeter
 echo ""
 
 # Dependencies
