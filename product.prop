@@ -1,3 +1,11 @@
+# ART
+dalvik.vm.boot-dex2oat-threads=8
+dalvik.vm.dex2oat-filter=speed
+dalvik.vm.dex2oat-threads=8
+dalvik.vm.image-dex2oat-filter=speed
+ro.sys.fw.dex2oat_thread_count=8
+ro.vendor.qti.am.reschedule_service=true
+
 # Bluetooth
 bluetooth.device.default_name=Moto G6 Play
 bluetooth.hardware.power.operating_voltage_mv=3300
@@ -25,3 +33,14 @@ bluetooth.profile.pbap.server.enabled?=true
 bluetooth.profile.sap.server.enabled?=true
 bluetooth.profile.ccp.server.enabled?=true
 bluetooth.profile.vcp.controller.enabled?=true
+
+# Dex2oat
+dalvik.vm.dex2oat64.enabled=true
+
+# Graphics
+debug.hwui.renderer=skiagl
+renderthread.skia.reduceopstasksplitting=true 
+debug.renderengine.backend=skiaglthreaded
+
+# Perfetto
+persist.device_config.runtime_native_boot.iorap_readahead_enable=true

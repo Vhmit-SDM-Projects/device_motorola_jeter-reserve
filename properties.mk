@@ -113,7 +113,8 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.vendor.display.cabl=0 \
     vendor.display.disable_rotator_downscale=1 \
     vendor.display.enable_default_color_mode=1 \
-    vendor.gralloc.disable_ahardware_buffer=1
+    vendor.gralloc.disable_ahardware_buffer=1 \
+    vendor.display.use_smooth_motion=1
 
 # Fingerprint
 PRODUCT_PROPERTY_OVERRIDES += \
@@ -206,6 +207,11 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.vendor.sensors.pedometer=false \
     ro.hardware.sensors=jeter
 
+# SmoothUI
+PRODUCT_PROPERTY_OVERRIDES += \
+    persist.service.lgospd.enable=0 \
+    persist.service.pcsync.enable=0
+
 # Telephony
 PRODUCT_PROPERTY_OVERRIDES += \
     ril.subscription.types=NV,RUIM \
@@ -260,7 +266,8 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 # Blur
 PRODUCT_PROPERTY_OVERRIDES += \
-    ro.surface_flinger.supports_background_blur=0
+    ro.surface_flinger.supports_background_blur=0 \
+    ro.launcher.blur.appLaunch=0
 
 # Zygote
 PRODUCT_PROPERTY_OVERRIDES += \
