@@ -393,6 +393,10 @@ service vendor.msm_irqbalance /vendor/bin/msm_irqbalance -f /vendor/etc/msm_irqb
 on charger
     setprop persist.sys.usb.config charging
 
+    # Notification LED
+    chown system system /sys/class/leds/red/brightness
+    write /sys/class/leds/red/brightness 255
+
 service charger /system/bin/charger
     class charger
     group system graphics
