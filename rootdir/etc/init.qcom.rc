@@ -249,6 +249,9 @@ on post-fs-data
     chmod 2770 /data/vendor/perfd
     rm /data/vendor/perfd/default_values
 
+    #Create IOP  deamon related dirs
+    mkdir /data/vendor/iop 0700 root system
+
     # Secure Element directory for loader service functionality
     mkdir /data/vendor/secure_element 0770 secure_element secure_element
 
