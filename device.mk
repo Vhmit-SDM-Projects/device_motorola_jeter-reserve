@@ -227,7 +227,8 @@ PRODUCT_PACKAGES += \
 
 # Packages
 PRODUCT_PACKAGES += \
-    QPGallery
+    QPGallery \
+    Pluma
 
 # Permissions
 PRODUCT_COPY_FILES += \
