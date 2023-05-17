@@ -3,3 +3,6 @@ vendor.qti.hardware.mwqemadapter::IMwqemAdapter              u:object_r:hal_mwqe
 
 # Dolby
 vendor.dolby.hardware.dms::IDms                              u:object_r:hal_dms_hwservice:s0
+
+# Fingerprint
+vendor.egistec.hardware.fingerprint::IBiometricsFingerprintEts                       u:object_r:default_android_hwservice:s0
