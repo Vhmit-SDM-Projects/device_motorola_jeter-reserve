@@ -23,6 +23,8 @@ PRODUCT_BRAND := Motorola
 PRODUCT_MODEL := Moto G6 Play
 PRODUCT_MANUFACTURER := Motorola
 
+LINEAGE_MAINTAINER := Vhmit (Victor Hugo)
+
 PRODUCT_BUILD_PROP_OVERRIDES += \
     PRIVATE_BUILD_DESC="jeter-user 9 PPPS29.118-57-5 d3be1 release-keys" \
     PRODUCT_NAME="jeter"
